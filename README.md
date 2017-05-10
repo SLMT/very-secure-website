@@ -73,3 +73,5 @@ A simple way to prevent brute-force attacks is limit how many times a user can t
   - A checklist for developers to prevent security risks on Node.js.
 - [OWASP Node Goat Project](https://www.owasp.org/index.php/Projects/OWASP_Node_js_Goat_Project)
   - An example project for developers to learn how common security risks on Node.js apply to web applications developed using Node.js and how to effectively address them.
+- [Security Checklist Developers](https://github.com/FallibleInc/security-guide-for-developers/blob/master/security-checklist.md)
+  - A general security checklist for backend developers
