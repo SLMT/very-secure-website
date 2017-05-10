@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="An example website for common security risks.">
+    <meta name="author" content="SLMT">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Very Secure Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css\index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Message Board</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input id="login-username" class="form-control mr-sm-2" type="text" placeholder="Username">
+          <input id="login-password" class="form-control mr-sm-2" type="password" placeholder="Password">
+          <button class="btn btn-outline-success my-2 my-sm-0" onclick="login()">Login</button>
+        </form>
+      </div>
+    </nav>
+
+    <div id="main-div" class="container">
+      <div id="login-alert" class="alert invisible" role="alert">
+      </div>
+      <div id="message" class="jumbotron invisible">
+        <h1 id="message-title"></h1>
+        <p id="message-text" class="lead"></p>
+      </div>
+      <h2>Messages</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Message Title</th>
+            </tr>
+          </thead>
+          <tbody id="message-data">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
