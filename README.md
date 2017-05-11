@@ -8,7 +8,7 @@ The website is a demostration for some common attacks to web servers.
 
 1. Install [PostgreSQL](https://www.postgresql.org/) and create a database on it.
 
-2. Run `node install` to install dependencies for this server.
+2. Run `npm install` to install dependencies for this server.
 
 3. Configure `config.js` in order to connect to your PostgreSQL database.
 
