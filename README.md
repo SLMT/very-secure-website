@@ -4,18 +4,28 @@ Actually, this website is very **insecure**.
 
 The website is a demostration for some common attacks to web servers.
 
+## Requirements
+
+- [Node.js](https://nodejs.org/) (including `node` runtime and `npm`)
+- A [PostgreSQL](https://www.postgresql.org/) Server
+
+### The Versions We Tested
+
+- Node.js v6.10.3
+- PostgreSQL v9.6.3
+
 ## Preparation
 
-1. Install [PostgreSQL](https://www.postgresql.org/) and create a database on it.
+1. Create a database on your PostgreSQL server.
 
-2. Run `npm install` to install dependencies for this server.
+2. Run `npm install` in this project directory to install dependencies.
 
 3. Configure `config.js` in order to connect to your PostgreSQL database.
 
 4. Run `node src/model/schema.js` to initialize your database.
 
 5. Run `node src/server.js` to start up your server.
-  - The server will be run on port `8080`.
+  - The web server will be run on port `8080`.
 
 6. Enjoy !
 
